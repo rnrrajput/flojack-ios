@@ -7,6 +7,7 @@
 //
 
 #import "FJNFCAdapter.h"
+#import "NSData+FJStringDisplay.h"
 
 #define HIGHJACK_SENDBYTE(x) while ([_nfcService send:x])
 

@@ -42,6 +42,11 @@ enum uart_state {
 	DECODE_BYTE_SAMPLE   = 5,
 };
 
+@interface FJNFCService ()
+- (void)sendFloJackConnectedStatusToDelegate:(BOOL)isFloJackConnected;
+-(void) handleReceivedByte:(UInt8)byte withParity:(BOOL)parityGood atTimestamp:(double)timestamp;
+@end
+
 @implementation FJNFCService
 {
     id <FJNFCServiceDelegate>	 _delegate;
