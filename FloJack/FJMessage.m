@@ -218,7 +218,7 @@
                 case FLOMIO_TAG_UID_OP: {
                     _name = @"FLOMIO_TAG_UID_OP";
                     
-                    NSRange dataRange = NSMakeRange(FJ_TAG_UID_DATA_POS, FJ_TAG_UID_DATA_LEN);
+                    NSRange dataRange = NSMakeRange(FJ_TAG_UID_DATA_POS, 7);
                     _data = [[NSData alloc] initWithData:[theData subdataWithRange:dataRange]];                    
                     break;
                 }
